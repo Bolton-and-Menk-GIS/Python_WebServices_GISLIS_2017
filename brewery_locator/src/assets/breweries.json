@@ -1,0 +1,1247 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.38938479499996,
+                    45.19801969500003
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2005 2ND AVE, ANOKA, MN, 55303",
+                "Id": 0,
+                "Latitude": 45.198019695,
+                "Longitude": -93.389384795,
+                "Name": "10K Brewing",
+                "Website": "http://10kbrew.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.27043229999998,
+                    45.02559939999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "3134 California Street NE, Minneapolis, MN, 55418",
+                "Id": 0,
+                "Latitude": 45.0255994,
+                "Longitude": -93.2704323,
+                "Name": "56 Brewing",
+                "Website": "http://www.56brewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.2465701,
+                    44.999075799999986
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "945 Broadway Street NE, Minneapolis, MN, 55413",
+                "Id": 0,
+                "Latitude": 44.9990758,
+                "Longitude": -93.2465701,
+                "Name": "612 Brew",
+                "Website": "http://www.612brew.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.25122909999999,
+                    44.9989654
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1121 Quincy Street NE, Minneapolis, MN, 55413",
+                "Id": 0,
+                "Latitude": 44.9989654,
+                "Longitude": -93.2512291,
+                "Name": "Able Seedhouse and Brewery",
+                "Website": "http://ablebeer.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.4499552,
+                    44.28938429999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1860 Schell Road, New Ulm, MN, 56073",
+                "Id": 0,
+                "Latitude": 44.2893843,
+                "Longitude": -94.4499552,
+                "Name": "August Schell Brewing Co.",
+                "Website": "http://www.schellsbrewery.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.46121239999998,
+                    44.793871900000006
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "4571 Valley Industrial Boulevard, Shakopee, MN, 55379",
+                "Id": 0,
+                "Latitude": 44.7938719,
+                "Longitude": -93.4612124,
+                "Name": "Badger Hill Brewing Co.",
+                "Website": "http://www.badgerhillbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.31719389999999,
+                    45.56499960000001
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "15 East Minnesota Street, St. Joseph, MN, 56374",
+                "Id": 0,
+                "Latitude": 45.5649996,
+                "Longitude": -94.3171939,
+                "Name": "Bad Habit Brewing Co.",
+                "Website": "http://www.badhabitbeer.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.1101995,
+                    44.938935099999995
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "414 7th Street West, St. Paul, MN, 55102",
+                "Id": 0,
+                "Latitude": 44.9389351,
+                "Longitude": -93.1101995,
+                "Name": "Bad Weather Brewing Co.",
+                "Website": "http://www.badweatherbrewery.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.19259059999999,
+                    44.9704807
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2320 Capp Road, St. Paul, MN, 55114",
+                "Id": 0,
+                "Latitude": 44.9704807,
+                "Longitude": -93.1925906,
+                "Name": "Bang Brewing",
+                "Website": "http://bangbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.4257035,
+                    44.5089989
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "200 & 218 S. Main Street, Hendricks, MN, 80226",
+                "Id": 0,
+                "Latitude": 39.7165423,
+                "Longitude": -105.0819197,
+                "Name": "Bank Brewing Co.",
+                "Website": "http://www.bankbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.24577760000001,
+                    45.0010838
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1315 Tyler Street NE, Minneapolis, MN, 55413",
+                "Id": 0,
+                "Latitude": 45.0010838,
+                "Longitude": -93.2457776,
+                "Name": "Bauhaus Brew Labs",
+                "Website": "http://bauhausbrewlabs.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.156923,
+                    45.5584245
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "216 6th Avenue South, St Cloud, MN, 56301",
+                "Id": 0,
+                "Latitude": 45.5584245,
+                "Longitude": -94.156923,
+                "Name": "Beaver Island Brewing",
+                "Website": "http://beaverislandbrew.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.88118723999999,
+                    47.47162486000007
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "401 BELTRAMI AVE NW, BEMIDJI, MN, 56601",
+                "Id": 0,
+                "Latitude": 47.47162486,
+                "Longitude": -94.88118724,
+                "Name": "Bemidji Brewing Co.",
+                "Website": "http://bemidjibeer.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.1737976,
+                    45.02453089999998
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1744 Terrace Drive, Roseville, MN, 55113",
+                "Id": 0,
+                "Latitude": 45.0245309,
+                "Longitude": -93.1737976,
+                "Name": "Bent Brewstillery",
+                "Website": "http://www.bentbrewstillery.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -92.12132366799995,
+                    46.768332428000065
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1912 W MICHIGAN ST, DULUTH, MN, 55806",
+                "Id": 0,
+                "Latitude": 46.768332428,
+                "Longitude": -92.121323668,
+                "Name": "Bent Paddle Brewing Co.",
+                "Website": "http://www.bentpaddlebrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.289288,
+                    46.519911
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "25435 Main Street, Nisswa, MN, 56468",
+                "Id": 0,
+                "Latitude": 46.519911,
+                "Longitude": -94.289288,
+                "Name": "Big Axe Brewing Company",
+                "Website": "http://www.bigwoodbrewery.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.00675659999999,
+                    45.08509949999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2222 4th Street, White Bear Lake, MN, 55110",
+                "Id": 0,
+                "Latitude": 45.0850995,
+                "Longitude": -93.0067566,
+                "Name": "Big Wood Brewery",
+                "Website": "http://www.bigwoodbrewery.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -92.09768591999995,
+                    46.79030051900003
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "211 E 2ND ST, DULUTH, MN, 55805",
+                "Id": 0,
+                "Latitude": 46.790300519,
+                "Longitude": -92.09768592,
+                "Name": "Blacklist Brewing Company",
+                "Website": "http://www.blacklistbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.28147609999999,
+                    44.9998752
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2014 Washington Avenue North #300, Minneapolis, MN, 55411",
+                "Id": 0,
+                "Latitude": 44.9998752,
+                "Longitude": -93.2814761,
+                "Name": "Boom Island Brewing Co.",
+                "Website": "http://boomislandbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -95.77967814599998,
+                    44.44060819000004
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "910 E MAIN ST, MARSHALL, MN, 56258",
+                "Id": 0,
+                "Latitude": 44.44060819,
+                "Longitude": -95.779678146,
+                "Name": "Brau Brothers Brewing Co.",
+                "Website": "http://www.braubeer.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.1742663,
+                    44.95881910000001
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1750 Thomas Avenue, St. Paul, MN, 55104",
+                "Id": 0,
+                "Latitude": 44.9588191,
+                "Longitude": -93.1742663,
+                "Name": "Burning Brothers Brewing Co.",
+                "Website": "http://www.burnbrosbrew.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -91.67295153399994,
+                    47.01982492700005
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "17 7TH ST, TWO HARBORS, MN, 55616",
+                "Id": 0,
+                "Latitude": 47.019824927,
+                "Longitude": -91.672951534,
+                "Name": "Castle Danger Brewery",
+                "Website": "http://www.castledangerbrewery.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.266405,
+                    45.00110109999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1300 2nd St NE, Minneapolis, MN, 55413",
+                "Id": 0,
+                "Latitude": 45.0011011,
+                "Longitude": -93.266405,
+                "Name": "Dangerous Man Brewing Co.",
+                "Website": "http://www.dangerousmanbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.26074109999999,
+                    44.94867570000001
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "920 East Lake Street #123, Minneapolis, MN, 55407",
+                "Id": 0,
+                "Latitude": 44.9486757,
+                "Longitude": -93.2607411,
+                "Name": "Eastlake Brewery & Tavern",
+                "Website": "http://www.eastlakemgm.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.661586,
+                    44.8598171
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "7929 Victoria Drive, Victoria, MN, 55386",
+                "Id": 0,
+                "Latitude": 44.8598171,
+                "Longitude": -93.661586,
+                "Name": "Enki Brewing Co.",
+                "Website": "http://www.enkibrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.56667029999998,
+                    44.90225879999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "421 3rd St., Excelsior, MN, 55331",
+                "Id": 0,
+                "Latitude": 44.9022588,
+                "Longitude": -93.5666703,
+                "Name": "Excelsior Brewing Co.",
+                "Website": "http://excelsiorbrew.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.24775909999998,
+                    45.013557299999995
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2506 Central Avenue NE, Minneapolis, MN, 55418",
+                "Id": 0,
+                "Latitude": 45.0135573,
+                "Longitude": -93.2477591,
+                "Name": "Fair State Brewing Cooperative",
+                "Website": "http://fairstate.coop/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.0715698,
+                    44.962562000000005
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "688 Minnehaha Avenue East, St. Paul, MN, 55106",
+                "Id": 0,
+                "Latitude": 44.962562,
+                "Longitude": -93.0715698,
+                "Name": "Flat Earth Brewing Co.",
+                "Website": "http://www.flatearthbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.2792028,
+                    44.9849296
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "414 6th Ave N, Minneapolis, MN, 55401",
+                "Id": 0,
+                "Latitude": 44.9849296,
+                "Longitude": -93.2792028,
+                "Name": "Fulton Brewing Co.",
+                "Website": "http://www.fultonbeer.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.94377535999996,
+                    45.301286953000044
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "7 CENTRAL AVE E, NEW LONDON, MN, 56273",
+                "Id": 0,
+                "Latitude": 45.301286953,
+                "Longitude": -94.94377536,
+                "Name": "Goat Ridge Brewing Co.",
+                "Website": "http://www.goatridgebrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.28695351899995,
+                    46.51797890000005
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "23836 SMILEY RD, NISSWA, MN, 56468",
+                "Id": 0,
+                "Latitude": 46.5179789,
+                "Longitude": -94.286953519,
+                "Name": "Gull Dam Brewing",
+                "Website": "http://gulldambrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.10705610000001,
+                    45.189077899999994
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "7785 Lakes Drive, Lino Lakes, MN, 55014",
+                "Id": 0,
+                "Latitude": 45.1890779,
+                "Longitude": -93.1070561,
+                "Name": "Hammerheart Brewinging Co.",
+                "Website": "http://www.hammerheartbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.2338704,
+                    44.94714439999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "3036 Minnehaha Ave., Minneapolis, MN, 55406",
+                "Id": 0,
+                "Latitude": 44.9471444,
+                "Longitude": -93.2338704,
+                "Name": "Harriet Brewing",
+                "Website": "http://www.harrietbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.87459660199994,
+                    45.17093093300008
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "112 1ST ST S, BUFFALO, MN, 55313",
+                "Id": 0,
+                "Latitude": 45.170930933,
+                "Longitude": -93.874596602,
+                "Name": "Hayes Public House",
+                "Website": "http://www.hayespublichouse.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.2516064,
+                    45.00348429999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "711 15th Ave. NE, Minneapolis, MN, 55413",
+                "Id": 0,
+                "Latitude": 45.0034843,
+                "Longitude": -93.2516064,
+                "Name": "Indeed Brewing Co.",
+                "Website": "http://www.indeedbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.2129537,
+                    44.9919344
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2821 East Hennepin, Minneapolis, MN, 55413",
+                "Id": 0,
+                "Latitude": 44.9919344,
+                "Longitude": -93.2129537,
+                "Name": "Insight Brewing",
+                "Website": "http://www.insightbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.2349464,
+                    46.34503479999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "7942 College Road, Baxter, MN, 56425",
+                "Id": 0,
+                "Latitude": 46.3450348,
+                "Longitude": -94.2349464,
+                "Name": "Jack Pine Brewery",
+                "Website": "http://jackpinebrewery.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.75709412699996,
+                    46.876219248000034
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1416 1ST AVE N, MOORHEAD, MN, 56560",
+                "Id": 0,
+                "Latitude": 46.876219248,
+                "Longitude": -96.757094127,
+                "Name": "Junkyard Brewing Co.",
+                "Website": "http://www.junkyardbeer.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -92.47781131599999,
+                    44.03126350200005
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1016 7TH ST NW, ROCHESTER, MN, 55901",
+                "Id": 0,
+                "Latitude": 44.031263502,
+                "Longitude": -92.477811316,
+                "Name": "Kinney Creek Brewery",
+                "Website": "http://www.kinneycreekbrewery.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -92.13188176099999,
+                    46.76111976300007
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2711 W SUPERIOR ST, DULUTH, MN, 55806",
+                "Id": 0,
+                "Latitude": 46.761119763,
+                "Longitude": -92.131881761,
+                "Name": "Lake Superior Brewing Co.",
+                "Website": "http://www.lakesuperiorbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.6615338,
+                    44.8587227
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "Victoria, MN",
+                "Id": 0,
+                "Latitude": 44.8587227,
+                "Longitude": -93.6615338,
+                "Name": "Lazy Loon Brewing",
+                "Website": "http://www.lazyloonbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -92.83177460000002,
+                    45.0391751
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1900 Tower Drive, Stillwater, MN, 55082",
+                "Id": 0,
+                "Latitude": 45.0391751,
+                "Longitude": -92.8317746,
+                "Name": "Lift Bridge Brewery",
+                "Website": "http://www.liftbridgebrewery.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.4098818,
+                    44.92466389999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "725 Main Street, Hopkins, MN, 55343",
+                "Id": 0,
+                "Latitude": 44.9246639,
+                "Longitude": -93.4098818,
+                "Name": "LTD Brewing Co.",
+                "Website": "http://www.ltdbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.44972500000002,
+                    44.895218
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "6020 Culligan Way, Minnetonka, MN, 55345",
+                "Id": 0,
+                "Latitude": 44.895218,
+                "Longitude": -93.449725,
+                "Name": "Lucid Brewing",
+                "Website": "http://www.lucidbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.78935187199994,
+                    45.03922403000007
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "248 S RIVER ST, DELANO, MN, 55328",
+                "Id": 0,
+                "Latitude": 45.03922403,
+                "Longitude": -93.789351872,
+                "Name": "Lupine Brewing Company",
+                "Website": "http://lupinebrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.73727351499997,
+                    45.331908672000054
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "570 HUMBOLT DR, BIG LAKE, MN, 55309",
+                "Id": 0,
+                "Latitude": 45.331908672,
+                "Longitude": -93.737273515,
+                "Name": "Lupulin Brewing Co.",
+                "Website": "http://www.lupulinbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.28854319999998,
+                    44.94891519999998
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2934 Lyndale Avenue South, Minneapolis, MN, 55408",
+                "Id": 0,
+                "Latitude": 44.9489152,
+                "Longitude": -93.2885432,
+                "Name": "LynLake Brewery",
+                "Website": "http://www.lynlakebrewery.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.01367320999996,
+                    44.18197742000007
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1119 CENTER ST, MANKATO, MN, 56003",
+                "Id": 0,
+                "Latitude": 44.18197742,
+                "Longitude": -94.01367321,
+                "Name": "Mankato Brewery",
+                "Website": "http://mankatobrewery.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -92.7543132,
+                    44.066693799999996
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "101 East Fifth Street, Mantorville, MN, 55955",
+                "Id": 0,
+                "Latitude": 44.0666938,
+                "Longitude": -92.7543132,
+                "Name": "Mantorville Brewing Co.",
+                "Website": "http://www.mantorvillebeer.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -92.8064351,
+                    45.0581451
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "225 Main Street North, Stillwater, MN, 55082",
+                "Id": 0,
+                "Latitude": 45.0581451,
+                "Longitude": -92.8064351,
+                "Name": "Maple Island Brewing Co.",
+                "Website": "http://www.mapleislandbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.22114959999999,
+                    44.9983406
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "783 Harding Street NE, Minneapolis, MN, 55413",
+                "Id": 0,
+                "Latitude": 44.9983406,
+                "Longitude": -93.2211496,
+                "Name": "NorthGate",
+                "Website": "http://www.northgatebrew.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -91.8189963,
+                    44.09926659999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "16557 County Road 25, Rollingstone, MN, 55969",
+                "Id": 0,
+                "Latitude": 44.0992666,
+                "Longitude": -91.8189963,
+                "Name": "Olvalde Farm and Brewing Company",
+                "Website": "http://olvalde.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.44972500000002,
+                    44.895218
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "6020 Culligan Way, Minnetonka, MN, 55345",
+                "Id": 0,
+                "Latitude": 44.895218,
+                "Longitude": -93.449725,
+                "Name": "Pryes Brewing",
+                "Website": "http://www.pryesbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.7447929,
+                    44.8439878
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "8785 Airport Road, Waconia, MN, 55387",
+                "Id": 0,
+                "Latitude": 44.8439878,
+                "Longitude": -93.7447929,
+                "Name": "Schram Vineyard Winery & Brewery",
+                "Website": "http://www.schramvineyards.com/p/home.html"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.073106,
+                    44.97096699999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "990 Payne Avenue, St. Paul, MN, 55130",
+                "Id": 0,
+                "Latitude": 44.970967,
+                "Longitude": -93.073106,
+                "Name": "Sidhe Brewing Co.",
+                "Website": "http://www.sidhebrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.288925,
+                    44.97322299999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "712 Ontario Avenue West, Minneapolis, MN, 55403",
+                "Id": 0,
+                "Latitude": 44.973223,
+                "Longitude": -93.288925,
+                "Name": "Sisyphus Brewing",
+                "Website": "http://www.sisyphusbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.24549909999999,
+                    45.003774199999995
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1500 Fillmore St. NE, Minneapolis, MN, 55413",
+                "Id": 0,
+                "Latitude": 45.0037742,
+                "Longitude": -93.2454991,
+                "Name": "Sociable Cider Werks",
+                "Website": "http://sociablecider.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.78788499999995,
+                    45.04222929200006
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "221 2ND ST N, DELANO, MN, 55328",
+                "Id": 0,
+                "Latitude": 45.042229292,
+                "Longitude": -93.787885,
+                "Name": "South Fork Brewing Co.",
+                "Website": "http://southforkbrewingcompany.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.11910379999999,
+                    45.259704199999995
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "300 East Elm Street, Annandale, MN, 55302",
+                "Id": 0,
+                "Latitude": 45.2597042,
+                "Longitude": -94.1191038,
+                "Name": "Spilled Grain Brewhouse",
+                "Website": "http://www.spilledgrainbrewhouse.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.34121539999998,
+                    44.94136089999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "4848 W 35th St., St. Louis Park, MN, 55416",
+                "Id": 0,
+                "Latitude": 44.9413609,
+                "Longitude": -93.3412154,
+                "Name": "Steel Toe Brewing Co.",
+                "Website": "http://www.steeltoebrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.13949610000002,
+                    44.914029299999996
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "910 Montreal Circle, St. Paul, MN, 55102",
+                "Id": 0,
+                "Latitude": 44.9140293,
+                "Longitude": -93.1394961,
+                "Name": "Summit Brewing Co.",
+                "Website": "http://www.summitbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.2097663,
+                    44.97322869999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "520 Malcolm Avenue SE, Minneapolis, MN, 55414",
+                "Id": 0,
+                "Latitude": 44.9732287,
+                "Longitude": -93.2097663,
+                "Name": "Surly Brewing Co.",
+                "Website": "http://www.surlybrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -96.20425576999997,
+                    43.654185505000044
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "509 E MAIN ST, LUVERNE, MN, 56156",
+                "Id": 0,
+                "Latitude": 43.654185505,
+                "Longitude": -96.20425577,
+                "Name": "Take 16 Brewing",
+                "Website": "http://www.surlybrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -94.42903418299994,
+                    45.458211826000074
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "219 RED RIVER AVE N, COLD SPRING, MN, 56320",
+                "Id": 0,
+                "Latitude": 45.458211826,
+                "Longitude": -94.429034183,
+                "Name": "Third Street Brewhouse",
+                "Website": "http://www.thirdstreetbrewhouse.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.093581,
+                    44.9508972
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "125 9th Street East, St. Paul, MN, 55101",
+                "Id": 0,
+                "Latitude": 44.9508972,
+                "Longitude": -93.093581,
+                "Name": "Tin Whiskers Brewing",
+                "Website": "http://www.twbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.19330889999999,
+                    44.970461
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2325 Endicott Street, St. Paul, MN, 55114",
+                "Id": 0,
+                "Latitude": 44.970461,
+                "Longitude": -93.1933089,
+                "Name": "Urban Growler Brewing Co.",
+                "Website": "http://www.urbangrowlerbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.13433649999999,
+                    44.92224079999999
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1254 West 7th, St. Paul, MN, 55102",
+                "Id": 0,
+                "Latitude": 44.9222408,
+                "Longitude": -93.1343365,
+                "Name": "Vine Park Brewing Co.",
+                "Website": "http://www.vinepark.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -90.32989546999994,
+                    47.752306241000035
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "233 E HWY 61, GRAND MARAIS, MN, 55604",
+                "Id": 0,
+                "Latitude": 47.752306241,
+                "Longitude": -90.32989547,
+                "Name": "Voyageur Brewing Co.",
+                "Website": "http://www.voyageurbrewing.com/"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -93.08471829999999,
+                    44.9329545
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "429 Wabasha Street South, St. Paul, MN, 55107",
+                "Id": 0,
+                "Latitude": 44.9329545,
+                "Longitude": -93.0847183,
+                "Name": "Wabasha Brewing Co.",
+                "Website": "http://www.wabashabrewing.com/"
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}

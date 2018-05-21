@@ -1,0 +1,551 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="//www.bolton-menk.com/sites/default/files/favicon-16x16.ico">
+  <title>Python Web Services</title>
+
+  <!-- <link rel="stylesheet" href="reveal/css/theme/black.css"> -->
+
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/league.css" id="theme">
+    <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+        <!-- ::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ::::::::::::::::: || COVER || ::::::::::::::::: -->
+        <!-- ::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+      <section class='cover'>
+        <h1 class="title">Web Services using Python & Flask</h1>
+        <p>
+          <!-- <h2 class="presentation-subtitle">Caleb Mackey & Nate Christ</h2> -->
+        </p>
+        <p class="author">
+          Caleb Mackey & Nate Christ
+        </p>
+      </section>
+        <!-- ::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ::::::::::::::::: || COVER || ::::::::::::::::: -->
+        <!-- ::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+         <!-- ::::::::::::::::: || OUTLINE || ::::::::::::::::: -->
+
+      <section id='outline' class='slides outline' data-transition="concave" data-background-transition="zoom" style="margin-top: -5px; margin-bottom: -10px;">
+          <h2>Outline</h2>
+          <ul>
+          <ul class='fragment' style='font-size: 30pt'>
+            <li type='disc'>Web Services</li>
+            <ul>
+              <li>Overview</li>
+              <li>Types of Services</li>
+              <li>Client/Server Communication (XHR)</li>
+            </ul>
+            </ul>
+            <ul class='fragment' style='font-size: 30pt'>
+            <li type='disc'>Custom Services</li>
+            <ul>
+              <li>Flask</li>
+              <li>Deploying Flask</li>
+              <li>Security</li>
+              <li>Tips & Tricks</li>  
+            </ul>
+            <li type='disc' class='fragment'>Demos</li>            
+          </ul>
+          </ul>
+      </section>
+
+        <!-- ::::::::::::::::: || OUTLINE || ::::::::::::::::: -->
+
+        <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ::::::::::::::::::::: || WEB SERVICES USING PYTHON || ::::::::::::::::::::::: -->
+        <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- :::::::::::::::::: || WEB SERVICES STACK || NC ::::::::::::::::: -->
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <section id='webservicestack'>
+      <!-- ::::::::::::::: WHAT IS A WEB SERVICE ::::::::::::::::: --> 
+            <section id='webservice' class='slides' data-transition="convex" data-background-transition="zoom" style='margin-top: -50px'>
+              <h2>What is a web Service?</h2>
+              <p style='font-size: 28pt' class='fragment'>A web service exposes business logic, data, and/or server-side processes typically accessed through a programmatic interface (API) consumed by a single or multiple clients (application(s)) across a network or the world wide web
+                </p>
+            </section>
+      <!-- ::::::::::::::: WHAT IS A WEB SERVICE ::::::::::::::::: -->
+
+      <!-- ::::::::::::::: WHY WEB SERVICE ::::::::::::::::: -->
+          <section id='whywebservice' data-transition="concave" data-background-transition="zoom" style='margin-top: -50px'>
+              <h2>Why Use Web Services?</h2>
+              <ul>
+                <li class='fragment'>An application needs data which is usually stored in a database on a server</li>
+                <li class='fragment'>A web service provides a communication layer with a database/data store to retrieve data to be used in the application</li>
+                <li class='fragment'>A web service also provides methods to access data that can be formatted into specific data structures and run processes on the server to return processed data the client won't need to process</li>
+              </ul>
+          </section>
+      <!-- ::::::::::::::: WHY WEB SERVICE ::::::::::::::::: -->
+
+      <!-- ::::::::::::::: WEB SERVICE TYPES ::::::::::::::::: -->
+          <section id='webservicetypes' data-transition="convex" data-background-transition="zoom" style='margin-top: -50px'>
+            <h2>Common Service Types</h2>
+            <ul style='font-size: 28pt'>
+              <li style='margin-bottom: 10px;'>SMTP – (Simple Mail Transfer Protocol) email/messaging services</li>
+              <li style='margin-bottom: 10px;'>FTP – (File Transfer Protocol) Data/File transfer service</li>
+              <li style='margin-bottom: 10px'>SOAP – (Simple Object Access Protocol) XML based data transfer through HTTP</li>
+              <li style='margin-bottom: 10px;'>REST – (Representational State Transfer) Typically JSON based data transfer through HTTP</li>
+            </ul>
+          </section>
+      <!-- ::::::::::::::: WEB SERVICE TYPES ::::::::::::::::: -->
+
+      <!-- ::::::::::::::: REST ::::::::::::::::: -->
+      <section id='rest' data-transition="convex" data-background-transition="zoom" style='padding-top: 0; padding-bottom: 10px; margin-top: -30px'>
+        <h2 style='margin-bottom: 25px;'>REST</h2>
+        <ul style='margin-bottom: 20px;'/>
+              <li class='fragment'>Architectural Style</li>
+              <li class='fragment'>Uses HTTP methods - GET, POST, UPDATE, and DELETE</li>
+              <li class='fragment'>Exposes resources in a directory like structure</li>
+                <ul class='fragment'>
+                <li type='circle'>Stateless</li>
+                <li type='circle'>Completely decoupled from the client</li>
+              </ul>
+              <li class='fragment'>Flexible, lightweight, & easy to use</li>
+              <li class='fragment'>Transfers JSON, xml, plain-text</li>
+        </ul>
+      </section>
+      <!-- ::::::::::::::: REST ::::::::::::::::: -->
+
+      <!-- ::::::::::::::: COMMUNICATION ::::::::::::::::: -->      
+      <section id='communication' data-transition="convex" data-background-transition="zoom" style='padding-top: 0; padding-bottom: 10px; margin-top: -70px'>
+        <h2 style='margin-bottom: 25px;'>Client/Server Communication</h2>
+        <div id='images' class='fragment comm'>
+          <div class='top' style='display: flex;'>
+            <img src='images/Client.png'/>
+            <img src='images/Apptier.png'/>
+            <img src='images/DataTier.png'/>
+        </div>
+          <div class='bottom' style='display: flex;'>
+          <img class='fragment' src='images/ServiceComm.png'/>      
+          <img class='fragment' src='images/DataComm.png'/>            
+          <div>
+        </div>
+      </section>
+      <!-- ::::::::::::::: COMMUNICATION ::::::::::::::::: -->
+
+      <!-- ::::::::::: SIMPLE REQUEST CLIENT SIDE ::::::::::::: -->
+      <section id='clientRequest' data-transition="convex" data-background-transition="zoom" style='padding-top: 0; padding-bottom: 10px; margin-top: -20px'>
+        <h2 style='margin-bottom: 35px;'>Simple Client AJAX Request</h2>
+        <pre><code class="hljs javascript" data-trim>
+          let endpoint = 'http://localhost:5000/users';
+
+          let xhr = new XMLHttpRequest();
+          xhr.onload = function(){
+            console.log(this.response);
+          }
+
+          xhr.open("GET", endpoint, true);
+          xhr.send();
+        </code></pre>
+      </section>
+      <!-- ::::::::::: SIMPLE REQUEST CLIENT SIDE ::::::::::::: -->    
+      </section>
+
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- :::::::::::::::::: || WEB SERVICES STACK || NC ::::::::::::::::: -->
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ::::::::::::: || FRAMEWORKS STACK || CM ::::::::::::::: --> 
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <section id="web-services-frameworks-stack" data-background-transition="zoom">
+        <section data-transition="convex" data-background-transition="zoom" style='margin-top:-50px'>
+          <h3>Creating Custom Web Services</h3>
+          <ul class='fragment'>
+            <li>RESTful Services can be created from many different programming languages and frameworks</li>
+            <ul>
+              <li class='fragment' type='circle'>Java, ASP.NET, php, Swift, Node.js, Ruby on Rails, Python, etc</li>
+            </ul>
+          </ul>
+          <ul class='fragment'>
+            <li>Why Python?</li>
+            <ul class='fragment'>
+              <li>We already have a huge library of custom Python modules</li>
+              <li>Tons of Third Party modules available</li>
+            </ul>
+          </ul>
+        </section>
+
+        <section id="python-frameworks" data-transition="convex" data-background-transition="zoom" style='margin-top:-32px'>
+          <h3>Python Web Frameworks</h3>
+          <ul>
+            <li class='fragment'>Django, Flask, Bottle, Twisted, Cherry Py, Tornado, etc</li>
+            <ul>
+              <li  class='fragment' type='circle'>Django and Flask seem to be the most widely used</li>
+            </ul>
+            <li class='fragment'>"The Navy uses Django, Pirates use Flask"</li>
+            <ul class='fragment'>
+              <li type='circle'>Well, I guess we are Pirates...</li>
+            </ul>
+          </ul>
+        </section>
+
+      </section>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ::::::::::::: || FRAMEWORKS STACK || ::::::::::::::: --> 
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+
+      <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::::: || FLASK STACK || :::::::::::::::::::::::::::::: -->
+      <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <section id="flask-stack">
+        <section id="flask-info" data-transition="concave" data-background-transition="convex" style='margin-top: -25px'>
+          <h3>Flask</h3>
+          <ul class='fragment'>
+            <li><a href="http://flask.pocoo.org/docs/0.12/" target="_blank">Python based micro web framework</a></li>
+            <ul style+'font-size: 36px;'>
+              <li class='fragment'>Very Fast Performance for REST Services</li>
+              <ul style="font-size: 30px;">
+                <li class='fragment'>Less Overhead than Django</li>
+                <li class='fragment'>Simple setup, can be and running in 2 minutes</li>
+              </ul>
+              <li class='fragment'>Has many extensions, such as Flask-SqlAlchemy to support database Object Relational Mapping (ORM)</li>
+            </ul>
+            <li class='fragment'>Can also be used to create entire web applications (front and back end) completely written in Python via <a href="http://jinja.pocoo.org/docs/2.9/" target="_blank">Jinja2</a> templates.</li>
+          </ul>
+        </section>
+
+        <section id="minimal-flask-app" style='margin-top: -25px'>
+          <h3>Minimal working app</h3>
+          <pre><code class="hljs python" data-trim>
+            from flask import Flask, jsonify
+            app = Flask(__name__)
+
+            @app.route('/', methods=['GET'])
+            def hello_world():
+                return jsonify({'message': 'Hello, World!'})
+
+            if __name__ == '__main__':
+                app.run(port=5001, debug=True) #Running on http://127.0.0.1:5001/ (localhost)
+          </code></pre>
+        </section>
+      </section>
+
+      <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::::: || FLASK STACK || :::::::::::::::::::::::::::::: -->
+      <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::: || SECURITY STACK || :::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <section id="security-section">
+        <section id='security' data-transition="concave" data-background-transition="convex" style='margin-top: -25px'>
+          <h3>Security</h3>
+          <ul>
+            <li class='fragment' type='circle'>Adding Security is very simple in flask</li>
+            <ul class='fragment' style="font-size: 30px;">
+              <li type='circle'>flask_jwt - built in security using JWT (<a href="https://jwt.io/introduction/" target="_blank">JSON Web Tokens</a>)</li>
+              <ul>
+                <li type='circle'><a href="https://blog.miguelgrinberg.com/post/how-secure-is-the-flask-user-session" target="_blank">Not very secure</a>, easy to hack</li>
+              </ul>
+            </ul>
+            <li class='fragment' type='circle'>Custom Security</li>
+            <ul class='fragment' style="font-size: 30px; ">
+              <li type='circle'>We have created our own custom Token Based Security</li>
+              <ul>
+                <li type='circle'>Supports a named user model as well as Active Directory Integration</li>
+                <li type='circle'>Each token has a expiration time (defaults to 8 hours)</li>
+                <li type='circle'>Token info stored in SQLite Database</li>
+              </ul>
+            </ul>
+          </ul>
+        </section>
+      </section>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::: || SECURITY STACK || :::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+      <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::: || DEPLOYMENT STACK || ::::::::::::::::::::::::::: -->
+      <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+<section id='deployment-stack'>
+        <section id="flask-deployment" data-transition="concave" data-background-transition="convex" style='margin-top: -25px'>
+          <h3>Deployment for Production</h3>
+          <ul class='fragment'>
+            <li>Can be deployed to IIS, Apache, or even hosted options like Heroku or Cloud9</li>
+          </ul>
+          <ul>
+            <li class='fragment'><a href="http://netdot.co/2015/03/09/flask-on-iis/" target="_blank">Deploying on IIS</a></li>
+            <ul>
+              <li class='fragment'>Requires <a href="https://www.iis.net/downloads/microsoft/fastcgi-for-iis" target="_blank">FastCGI</a> Module</li>
+              <li class='fragment'>We created an Application Pool for running Flask</li>
+              <ul>
+                <li class='fragment'>Important: make sure you set the "Start Mode" to "Always Running"</li>
+              </ul>
+              <li class='fragment'>Set http/https bindings for each flask site (port)</li>
+            </ul>
+          </ul>
+
+        </section>
+
+        <section class="present" style='margin-top: -15px'>
+          <h4>Validating against Active Directory</h4>
+          <pre ><code class="hljs python" data-trim>
+              class SecurityHandler(object):
+                  _ldap_base = 'LDAP://ldap_server.your-domain.com'  # very important, your ldap server
+                  _default_group = None
+
+                  def validate_AD(self, usr, pw='xxx', group=_default_group):
+                      usr = usr.split('\\')[-1]
+                      dn = 'your-domain\\{}'.format(usr.split('\\')[-1])  #username with domain validation
+                      try:
+                          conn = ldap.initialize(self._ldap_base)
+                          conn.protocol_version = 3
+                          conn.set_option(ldap.OPT_REFERRALS, 0)
+                          conn.simple_bind_s(dn, pw or 'xxx')  # need to be able to throw an error off an invalid pw
+                          if group and not self.userInGroup(usr, group):  # custom method to check if user is in group
+                              return GROUP_ACCESS_DENIED
+                          return VALID_CREDENTIALS
+                      except ldap.INVALID_CREDENTIALS:
+                          return INVALID_CREDENTIALS
+          </code></pre>
+        </section>
+
+        <section style='margin-top: -15px'>
+          <h4>Create an Authentication Decorator</h4>
+          <pre><code class="hljs python" data-trim>
+          class FlaskExtension(Flask):  # inherit from Flask object
+              def __init__(self, name, use_security=True, **kwargs):
+                  super(FlaskExtension, self).__init__(self, name)
+                  self.use_security = use_security
+                  # do more custom initialization stuff
+
+              def authenticate(self, group=None, named_user=False, specific_users=[]):
+                  """decororator to validate security
+
+                  Optional:
+                      group -- group to validate token against in active directory, this is
+                          ignored if named_user param is set to True.
+                      named_user -- will authenticate against user store instead of Active Directory
+                          shen set to True. Default is False.
+                      specific_users -- list or comma separated string of specific users who can access
+                          resource.
+                  """
+                  def decorator(f):
+                      @wraps(f)   # functolls.wraps
+                      @cross_origin(origin='*')
+                      def wrapped(*args, **kwargs):
+                          if self.use_security:  # check if security is enabled
+                              self.check_token(group, named_user, specific_users) # custom method for validating token
+                          return f(*args, **kwargs)
+                      return wrapped
+                  return decorator
+          </code></pre>
+        </section>
+
+        <section>
+          <h4>Securing a REST Endpoint</h4>
+          <pre><code class="hljs python" data-trim>
+            @app.authenticate(group='Admins') #check that there is a valid token for user, and that user is member of "Admins" Group
+            @app.route('/gis/rest/securedResource', methods=['GET'])
+            def securedResource(): # handler for the rest endpoint
+                return jsonify({
+                  'secret': 'not for prying eyes!'
+                })
+          </code></pre>
+        </section>
+
+      </section>
+
+      <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::: || DEPLOYMENT STACK || ::::::::::::::::::::::::::: -->
+      <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::: || TIPS STACK || :::::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <section id="tips-stack">
+        <section style= 'margin-top: -20px;'>
+          <h2>Tips</h2>
+          <ul class='fragment'>
+            <li>Create utility functions for doing things like collecting different types of input arguments</li>
+            <ul>
+              <li>query string, form body, headers, cookies, files, etc.</li>
+            </ul>
+            <li class='fragment'>Handle Errors as JSON</li>
+            <li class='fragment'>Use Synchronous and Asynchronous endpoints</li>
+            <ul class='fragment'>
+              <li><a href="http://www.celeryproject.org/" target="_blank">Celery</a> integrates well with Flask for Async operations</li>
+            </ul>
+          </ul>
+        </section>
+
+        <section style= 'margin-top: -50px;'>
+          <h4>Getting Request Arguments</h4>
+          <pre><code class="hljs python" data-trim>
+            def collect_args():
+                # check query string first
+                data = {}
+                for arg in request.values:
+                    val = request.args.get(arg, None)
+                    if val is not None:
+                        data[arg] = val
+
+                # form data
+                for k,v in request.form.iteritems():
+                    data[k] = v
+
+                # check data attribute as fallback
+                request_json = request.get_json() or {}
+                for k,v in request_json.iteritems():
+                    data[k] = v
+                    # no application/json mimetype header...
+                    try:
+                        req_data = json.loads(request.data) or {}
+                        for k,v in req_data.iteritems():
+                            data[k] = v
+                    except:
+                        pass
+
+                # finally, check for files
+                if request.files:
+                    for k,v in request.files.iteritems():
+                        data[k] = v
+                return data
+          </code></pre>
+        </section>
+
+        <section style= 'margin-top: -50px;'>
+          <h4>Returning Errors as JSON</h4>
+          <pre><code class="hljs python" data-trim>
+            class JSONExceptionHandler(object):
+                """https://coderwall.com/p/xq88zg/json-exception-handler-for-flask"""
+
+                def __init__(self, app=None):
+                    if app:
+                        self.init_app(app)
+
+                def std_handler(self, error):
+                    response = jsonify(message=error.message)
+                    response.status_code = error.code if isinstance(error, HTTPException) else 500
+                    return response
+
+                def init_app(self, app):
+                    self.app = app
+                    self.register(HTTPException)
+                    for code, v in default_exceptions.iteritems():
+                        self.register(code)
+
+                def register(self, exception_or_code, handler=None):
+                    self.app.errorhandler(exception_or_code)(handler or self.std_handler)
+          </code></pre>
+        </section>
+
+      </section>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::: || TIPS STACK || CM:::::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+      <!-- ::::::::::::::::::: || DEMO STACK || ::::::::::::::::::: -->
+      <section id='demo-stack'>
+        <section id="demos" data-transition="concave" data-background-transition="convex" style='margin-top: -25px'>
+        <h1>
+          Demos
+        </h1>
+      </section>
+      </section>
+
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <!-- ::::::::::::::::::::::::::::::: || Questions || :::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+     <section id='question-stack'>
+      <section id="questions" style='margin-top: -35px;'>
+        <h2>Questions?</h2>
+        <div>
+          <p><a href="mailto:calebma@bolton-menk.com">Caleb Mackey</a></p>
+          <p><a href="mailto:natech@bolton-menk.com">Nate Christ</a></p>
+        </div>
+        <h3 style='font-size: 45px;'>Resources</h3>
+          <p style='font-size: 24px;'><a href='https://github.com/Bolton-and-Menk-GIS/Python_WebServices_GISLIS_2017' target='_blank'>Github App Repo</p>
+          <p style='font-size: 24px;'><a href='http://www.users.miamioh.edu/brinkmwj/sigcse2016-workshop402/docs/webservices.html
+' target='_blank'>Programming Web Services</p>
+          <p style='font-size: 24px;'><a href='https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet' target='_blank'>API Design Cheatsheet</p>
+      </section>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      <!-- ::::::::::::::::::::::::::::::: || Questions || :::::::::::::::::::::::::::::: -->
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+      </section>
+
+        <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- :::::::::::::::::::: || WEB SERVICES USING PYTHON || :::::::::::::::::::::::: -->
+        <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+
+    </div>
+  </div>
+  <div id="footer-wrapper">
+  <div id="footer">
+
+    <div class="green-bar">
+      <a href='http://www.bolton-menk.com' target='_blank'><img class="logo" src="images/BMI_Circle.png" alt=""></a>
+    </div>
+  </div>
+</div>
+  <script src="reveal/lib/js/head.min.js"></script>
+  <script src="reveal/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [{
+        src: 'reveal/plugin/markdown/marked.js'
+      }, {
+        src: 'reveal/plugin/markdown/markdown.js'
+      }, {
+        src: 'reveal/plugin/notes/notes.js',
+        async: true
+      }, {
+        src: 'reveal/plugin/highlight/highlight.js',
+        async: true,
+        callback: function() {
+          hljs.initHighlightingOnLoad();
+        }
+      }]
+    });
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+      var header = $('#header').html();
+      if ( window.location.search.match( /print-pdf/gi ) ) {
+        Reveal.addEventListener( 'ready', function( event ) {
+          $('.slide-background').append(header);
+        });
+      }
+      else {
+        $('div.reveal').append(header);
+      }
+  </script>
+</body>
+
+
+</html>

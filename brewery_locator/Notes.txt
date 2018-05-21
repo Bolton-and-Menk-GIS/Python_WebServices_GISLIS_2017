@@ -1,0 +1,6 @@
+npm install mapbox-gl --save -dev
+> webpack.config.js
+ module = {
+  noParse: /(mapbox-gl)\.js$/,
+  ...
+ }
